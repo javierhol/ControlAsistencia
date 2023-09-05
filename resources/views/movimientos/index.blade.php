@@ -18,12 +18,14 @@ Facilisimo | Movimientos
         <div class="col-md-12" >
             <table class="table table-striped jambo_table table-hover" id="movimientos_table">
                 <thead>
-                    <tr class="headings">  
+                    <tr class="headings"> 
                         <th class="column-title">Id Tecnologico</th>
                         <th class="column-title">Activo Fijo</th> 
                         <th class="column-title">Ubicacion</th>  
                         <th class="column-title">Punto</th> 
-                        <th class="column-title">Estado</th>   
+                        <th class="column-title">Estado</th>
+                        <th class="column-title">Nombre Activo</th>
+                        <th class="column-title">Fecha</th>    
                     </tr>
                 </thead>
                 <tbody id="_results">
@@ -34,6 +36,8 @@ Facilisimo | Movimientos
                         <td class=" ">{{$movimiento->ubicacion}}</td>
                         <td class=" ">{{$movimiento->punto}}</td>
                         <td class=" ">{{$movimiento->accion}}</td>
+                        <td class=" ">{{$movimiento->nombre}}</td>
+                        <td class=" ">{{$movimiento->fecha_creacion}}</td>
                     </tr>  
                     @endforeach
                 </tbody>
